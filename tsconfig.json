@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"rootDir": "Source",
+		"module": "ES2020",
+		"moduleResolution": "node",
+		"target": "ES2018",
+		"jsx": "react",
+		"noImplicitAny": false,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true, // doesn't modify output, *or* own import code (it's just for type-checking)
+		"outDir": "Dist",
+		"declaration": true,
+		"declarationDir": "Dist",
+		"lib": ["es6", "dom", "esnext"], // fixes AsyncIterator type-missing issue
+		"alwaysStrict": true,
+		"strictNullChecks": true,
+	},
+	"include": [
+		"Typings/**/*.d.ts",
+		"Source/**/*.ts",
+		"Source/**/*.tsx"
+	],
+	"compileOnSave": true
+}
